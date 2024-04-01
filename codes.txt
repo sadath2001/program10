@@ -1,0 +1,23 @@
+
+minikube start
+
+
+minikube status
+
+
+eval $(minikube docker-env)
+
+
+docker build -t myprg10 .
+
+
+kubectl apply -f kuber.yaml
+
+
+minikube service myapp-service
+
+
+minikube dashboard
+
+
+minikube stop
